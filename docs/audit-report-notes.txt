@@ -1,0 +1,10 @@
+Browser-Fingerprint audit scope
+
+Baseline commit: 3dd525d9d0d971be6eb9611cac120a52931c08c7
+Audit date: 2026-07-19
+
+The HTML report is the canonical audit deliverable. Source-level validation was
+performed against the current repository. Interactive execution across every
+browser/OS combination was outside the available environment; portability
+items are therefore identified as either confirmed code defects or risks that
+require a browser test matrix.
