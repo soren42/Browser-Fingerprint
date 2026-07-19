@@ -7,27 +7,6 @@ device details to generate a unique user fingerprint for that web browser.
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 ![Static Badge](https://img.shields.io/badge/php_8.x-white?style=flat&logo=php)
 
-<div align="center">
-
-
-
-
-
-</div>
-
-## Documentation
-
-<div align="center">
-
-[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/ "Go to project documentation")
-
-</div>
-
-
-## License
-
-Released under [MIT](/LICENSE) by [@soren42](https://github.com/soren42).
-
 ## What it is
 
 A dependency-free page (PHP + vanilla CSS/JS, no CDN calls) intended for
@@ -65,3 +44,9 @@ browser. No build step, no Composer, no external assets.
 
 > **Note:** several probes (UA Client Hints, `enumerateDevices`, clipboard)
 > require a secure context. Serve over HTTPS for full coverage.
+
+## Documentation
+[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/ "Go to project documentation")
+
+## License
+Released under [MIT](/LICENSE) by [@soren42](https://github.com/soren42).
