@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
+  <title id="title">BrowserPrint data flow</title>
+  <desc id="desc">Request and server data flow through browser collectors into fingerprints and report export.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#0b1520"/>
+      <stop offset="1" stop-color="#122131"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#67c7ff"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="220" rx="24" fill="url(#bg)"/>
+  <g font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">
+    <g fill="#111b27" stroke="#36526a" stroke-width="2">
+      <rect x="35" y="65" width="220" height="90" rx="14"/>
+      <rect x="330" y="65" width="220" height="90" rx="14"/>
+      <rect x="625" y="65" width="220" height="90" rx="14"/>
+      <rect x="920" y="65" width="245" height="90" rx="14"/>
+    </g>
+    <g fill="#dce8f2">
+      <text x="145" y="102">PHP headers</text><text x="145" y="128">and server data</text>
+      <text x="440" y="102">Browser collectors</text><text x="440" y="128">24 signal groups</text>
+      <text x="735" y="102">FP accumulator</text><text x="735" y="128">stable + volatile</text>
+      <text x="1042" y="102">Hashes, UI,</text><text x="1042" y="128">JSON export</text>
+    </g>
+    <g stroke="#67c7ff" stroke-width="4" marker-end="url(#arrow)">
+      <path d="M255 110 H320"/><path d="M550 110 H615"/><path d="M845 110 H910"/>
+    </g>
+  </g>
+</svg>
