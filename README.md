@@ -33,20 +33,36 @@ one-click **JSON export** of the full report.
 
 | File | Purpose |
 |---|---|
-| `fingerprint.php` | PHP server collection + HTML shell + CSS theme |
+| `index.php` | Audited default entry point; waits for all collectors before hashing |
+| `fingerprint.php` | Original PHP server collection + HTML shell + CSS theme |
 | `assets/browserprint.core.js` | Collectors for sections 1–21 |
-| `assets/browserprint.app.js` | Engine probes, intel bar, hashing, orchestration |
+| `assets/browserprint.app.js` | Engine probes, intel bar, hashing, original orchestration |
+| `assets/browserprint.audit-fixes.js` | Review compatibility layer fixing async orchestration |
+| `docs/code-audit-2026-07-19.html` | Self-contained source audit and improvement roadmap |
 
 ## Usage
 
-Upload the folder to any PHP 8+ web server and open `fingerprint.php` in a
-browser. No build step, no Composer, no external assets.
+Upload the folder to any PHP 8+ web server and open `index.php` in a browser.
+No build step, no Composer, no external assets.
+
+`fingerprint.php` remains available as the original direct entry point, but
+`index.php` is preferred because it waits for every asynchronous collector
+before computing the hashes and marking the scan complete.
 
 > **Note:** several probes (UA Client Hints, `enumerateDevices`, clipboard)
 > require a secure context. Serve over HTTPS for full coverage.
 
+## Security and privacy
+
+This application intentionally gathers high-entropy browser and device data.
+Keep it on a trusted private network unless you have reviewed the server-data
+exposure, consent model, output escaping, Content Security Policy, and export
+handling described in the audit report.
+
 ## Documentation
+
 [![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/ "Go to project documentation")
 
 ## License
+
 Released under [MIT](/LICENSE) by [@soren42](https://github.com/soren42).
