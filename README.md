@@ -3,6 +3,31 @@
 Uses browser-based capabilities to identify browser, OS, hardware, and other
 device details to generate a unique user fingerprint for that web browser.
 
+[![GitHub tag](https://img.shields.io/github/tag/soren42/browser-fingerprint?include_prereleases=&sort=semver&color=blue)](https://github.com/soren42/browser-fingerprint/releases/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+![Static Badge](https://img.shields.io/badge/php_8.x-white?style=flat&logo=php)
+
+<div align="center">
+
+
+
+
+
+</div>
+
+## Documentation
+
+<div align="center">
+
+[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/ "Go to project documentation")
+
+</div>
+
+
+## License
+
+Released under [MIT](/LICENSE) by [@soren42](https://github.com/soren42).
+
 ## What it is
 
 A dependency-free page (PHP + vanilla CSS/JS, no CDN calls) intended for
