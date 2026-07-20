@@ -389,7 +389,7 @@ transition: width 0.4s ease;
 box-shadow: 0 0 6px rgba(57,211,83,0.5);
 }
 
-/* ── Scrollbar ──────────────────────────────────────────────────────── */
+/* ── Scrollbar ────────────────────────────────────────────???????????????????????????????????? */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: #0d1117; } /* explicit dark */
 ::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
@@ -874,7 +874,7 @@ html.light .intel-conf.low    { box-shadow: 0 0 4px rgba(207,34,46,0.25); }
   <div id="masthead-top">
     <h1>
       &#9632; BROWSERPRINT
-      <span class="ver">v3.8 // intranet only // solarian design</span>
+      <span class="ver">v4.1 // intranet only // solarian design</span>
     </h1>
     <button id="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">
       <span id="theme-icon">☀</span><span id="theme-label">light</span>
